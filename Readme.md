@@ -26,18 +26,18 @@ It's a funny project to improve my skills in C.
 
 #### Example of main.c
 
-'''bash
+```bash
 #include "ft_printf.h"
 
 int main()
 {
 	ft_printf("Hello world number %d !\n", 5);
 }
-'''
+```
 
 #### Output 
 
-'''bash
+```bash
 $> make
 $> gcc main.c libftprintf.a
 $> ./a.out
@@ -45,4 +45,4 @@ Hello world number 5 !
 
 $>
 
-'''
+```
