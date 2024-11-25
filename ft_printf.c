@@ -6,7 +6,7 @@
 /*   By: abalk <abalk@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 09:27:15 by abalk             #+#    #+#             */
-/*   Updated: 2024/11/24 19:18:05 by abalk            ###   ########.fr       */
+/*   Updated: 2024/11/25 23:55:14 by abalk            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,6 @@ static size_t	conv(const char *c, va_list *ap)
 		return (ft_printunsigned(va_arg(*ap, unsigned int)));
 	if (*c == 'p')
 		return (ft_putadd(va_arg(*ap, void *)));
-	else if (*c && *(c + 1))
-		return (ft_putchar(*(c - 1)) + ft_putchar(*(c)));
 	else
 	{
 		return (-1);

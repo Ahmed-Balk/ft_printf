@@ -11,7 +11,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	@ar rc $(NAME) $(OBJ)
 
-%.o: %.c
+%.o: %.c ft_printf.h
 	@$(CC) $(CFLAGS) -c $< -o $@
 clean:
 	@rm -f $(OBJ) $(OBJ_BONUS)
